@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet type="text/css" href="style.css">
+    <link rel="javascript" type="javascript" href="index.js">
+    <title>Site sobre Ruhan</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <span>Olá, meu nome é </span>
+            <span class="nome" id="nome">Ruhan Kaio Schitz</span>
+            <span>This is my personal aplication!</span>
+            <span>What do you want to see?</span>
+            <navbar class="navbar">
+                <ul>
+                    <li><a class="navlink active" id="aboutme" href="#about" onclick="mostrarPag(1)">About me</a></li>
+                    <li><a class="navlink" id="home" href="#home" onclick="mostrarPag(2)">Home</a></li>
+                </ul>
+            </navbar>
+        </div>
+        <main>
+            <div id="conteudo"></div>
+        </main>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
