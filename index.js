@@ -34,7 +34,7 @@ function mostrarConteudo(param){
         conteudo = "<div id='about-me'><h1>About me</h1> <p>Olá, meu nome é Ruhan Kaio Schitz, tenho 18 anos e curso Análise e Desenvolvimento de Sistema no Senac.</div>"
         teste.innerHTML= conteudo
     } else if(param == 2){
-        conteudo = "<span>ola mundo</span>" 
+        conteudo = "<div> id='experience'><h1>Assustadus Tech</div>" 
         teste.innerHTML= conteudo
     }
 }
