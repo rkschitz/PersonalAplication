@@ -83,6 +83,10 @@ main {
     font-size: 25px;
 }
 
+li{
+    margin-top: -1px;
+}
+
 ul{
     list-style: none;
 }
@@ -92,13 +96,17 @@ ul a{
     transition: all 0.5s;
 }
 
+.navlink{
+    border-left: solid 3px gray;
+    padding-left: 30px;
+}
+
 .navlink:hover{
     font-size: 30px;
 }
 
 .active{
-    font-size: 30px;
-    background-color: red;
+    border-left: solid 3px red;
 }
 
 #about-me h1{
