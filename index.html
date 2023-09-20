@@ -7,25 +7,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel=stylesheet type="text/css" href="style.css">
     <link rel="javascript" type="javascript" href="index.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
     <title>Site sobre Ruhan</title>
 </head>
 
 <body>
     <div class="container">
         <div class="sidebar">
-            <span>Olá, meu nome é </span>
-            <span class="nome" id="nome">Ruhan Kaio Schitz</span>
-            <span>This is my personal aplication!</span>
-            <span>What do you want to see?</span>
+            <span class="nome" id="nome" style="text-align: center;">Ruhan Kaio Schitz</span>
+            <br>
+            <span class="legend" style="text-align: center;">What do you want to see?</span>
             <navbar class="navbar">
                 <ul>
-                    <li><a class="navlink active" id="aboutme" href="#about" onclick="mostrarPag(1)">About me</a></li>
-                    <li><a class="navlink" id="home" href="#home" onclick="mostrarPag(2)">Home</a></li>
+                    <li><a class="navlink" id="sobre" href="#Sobre" onclick="mostrarPag(1)">Sobre</a></li>
+                    <li><a class="navlink" id="experiencias" href="#Experiencias" onclick="mostrarPag(2)">Experiencia</a></li>
+                    <li><a class="navlink" id="estudos" href="#Estudos" onclick="mostrarPag(3)">Cursos</a></li>
                 </ul>
             </navbar>
+            <div class="footer-sidebar">
+                <div class="links">
+                    <a>Linkedin</a>
+                    <a>Github</a>
+                    <a>Email</a>
+                </div>
+            </div>
         </div>
         <main>
-            <div id="conteudo"></div>
+            <div id="conteudo">
+                <div id='beginning'>
+                    <span class='title-conteudo'>SEJA BEM VINDO!</span>
+                    <img>Aqui vai a minha imagem</img>
+                    <span>Éssa é minha aplicação pessoal!</span>
+                </div>
+                <div id='about'>
+                    <h1>About me</h1>
+                    <p>Olá, meu nome é Ruhan Kaio Schitz, tenho 18 anos e curso Análise e Desenvolvimento de Sistema no
+                        Senac.
+                </div>
+                <div id='experiences'>
+                    <h1>Experiencias</h1>
+                    <p>Olá, meu nome é Ruhan Kaio Schitz, tenho 18 anos e curso Análise e Desenvolvimento de Sistema no
+                        Senac.
+                </div>
+                <div id="studies">
+                    Cursos
+                </div>
+            </div>
         </main>
     </div>
     <script type="text/javascript" src="index.js"></script>
