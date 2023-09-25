@@ -68,3 +68,8 @@ function mostrarConteudo(param){
     //     conteudo = "<span>Cursos</span>"
     // }
 }   
+
+function toggleSidebar() {
+    var sidebar = document.querySelector('.sidebar-mobile');
+    sidebar.classList.toggle('open');
+  }
