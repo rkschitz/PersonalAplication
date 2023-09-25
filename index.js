@@ -9,23 +9,23 @@ text.innerHTML = html;
 this.mostrarConteudo(null);
 
 function mostrarPag(param) {
-    const aboutMeNavLink = document.getElementById('aboutme');
-    const homeNavLink = document.getElementById('home');
-    const curso = document.getElementById('curso');
+    const aboutMeNavLink = document.getElementById('sobre');
+    const experiencesNavLink = document.getElementById('experiencias');
+    const estudos = document.getElementById('estudos');
     
     aboutMeNavLink.classList.remove('active');
-    homeNavLink.classList.remove('active');
-    curso.classList.remove('active');
+    experiencesNavLink.classList.remove('active');
+    estudos.classList.remove('active');
     
     if (param == 1) {
-        aboutme.classList.add('active');
+        aboutMeNavLink.classList.add('active');
         this.mostrarConteudo(1);
     } else if (param == 2) {
-        home.classList.add('active');
+        experiencesNavLink.classList.add('active');
         this.mostrarConteudo(2);
     }
     else if (param == 3) {
-        curso.classList.add('active');
+        estudos.classList.add('active');
         this.mostrarConteudo(3);
     }
 }
@@ -37,15 +37,11 @@ function mostrarConteudo(param){
     const experiences = document.getElementById('experiences');
     const studies = document.getElementById('studies');
 
-    // inicial.classList.remove('active-div');
-    // about.classList.remove('active-div');
-    // experiences.classList.remove('active-div');
-    // studies.classList.remove('active-div');
-
-
-    console.log(inicial)
     inicial.classList.remove('active-div');
-    console.log(inicial)
+    about.classList.remove('active-div');
+    experiences.classList.remove('active-div');
+    studies.classList.remove('active-div');
+
 
     if(param == null){
         param = 0;
@@ -53,8 +49,6 @@ function mostrarConteudo(param){
 
     if(param == 0){
         inicial.classList.add('active-div');
-
-        console.log('inicial')
     }else if(param == 1){
         about.classList.add('active-div');
         console.log('1')

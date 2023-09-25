@@ -130,10 +130,72 @@ ul a{
     padding-left: 50px;
 }
 
-#inicial, #about, #studies{
+#beginning, #aboutme, #experiences, #studies{
     display: none;
 }
 
 .active-div{
-    display: block !important;
+    display: flex !important;
+    flex-direction: column;
+}
+
+#beginning{
+    gap: 10px;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 4px;
+    border: solid 1px grey;
+    padding: 10px;
+    transition: all 1s;
+}
+.conteudo-card{
+    display: flex;
+}
+
+.img-card{
+    width: 50px;
+    height: 100%;
+}
+
+.title-texto-card{
+    font-size: 22px;
+    transition: all 1s;
+}
+
+.conteudo-texto-card{
+    font-size: 15px;
+    transition: all 1s;
+}
+
+.linguagens-card{
+    display: flex;
+    gap: 5px;
+}
+
+.linguagem{
+    background-color: blueviolet;
+    min-width: 70px;
+    border-radius: 20%;
+    color: black;
+    text-align: center;
+    transition: all 1s;
+}
+
+.card:hover{
+    box-shadow: 2px 5px 5px 0px White;
+    
+    .title-texto-card{
+        font-size: 25px;
+    }
+    .conteudo-texto-card{
+        font-size: 18px;
+    }	
+    .linguagem{
+        color: white;
+    }
+
 }
