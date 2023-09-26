@@ -126,7 +126,7 @@ ul a {
 }
 
 #conteudo {
-    padding-top: 20px;
+    padding-top: 23px;
     padding-left: 50px;
 }
 
@@ -227,11 +227,15 @@ ul a {
         display: none;
     }
     .botao-sidebar{
-        opacity: 0;
+        display: block !important;
+    }
+    .sidebar-mobile{
+        display: block !important;
     }
 }
 
 .sidebar-mobile {
+    display: none;
     position: fixed;
     top: 0;
     left: -250px;
@@ -239,7 +243,7 @@ ul a {
     height: 100%;
     background-color: #1e111d;
     transition: left 0.3s ease;
-    padding-top: 50px;
+    padding-top: 70px;
     font-size: 25px;
     border-right: solid 1px gray;
 }
@@ -249,7 +253,7 @@ ul a {
 }
 
 .botao-sidebar {
-    opacity: 1;
+    display: none;
     position: absolute;
     top: 21px;
     left: 10px;
@@ -287,5 +291,34 @@ ul a {
     .linguagem {
         font-size: 10px;
     }
-    
+
+    .card:hover {
+    box-shadow: 2px 5px 5px 0px White;
+
+    .title-texto-card {
+        font-size: 18px;
+    }
+
+    .conteudo-texto-card {
+        font-size: 14px;
+    }
+
+    .linguagem {
+        color: white;
+    }
+
+    .img-card img {
+        width: 80px;
+        height: 80px;
+    }
+
+}
+   
+}
+
+.links{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-right: 10px;
 }

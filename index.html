@@ -23,22 +23,20 @@
             <navbar class="navbar">
                 <ul>
                     <li><a class="navlink" id="sobre" href="#Sobre" onclick="mostrarPag(1)">Sobre</a></li>
-                    <li><a class="navlink" id="experiencias" href="#Experiencias"
-                            onclick="mostrarPag(2)">Experiencia</a></li>
+                    <li><a class="navlink" id="experiencias" href="#Experiencias" onclick="mostrarPag(2)">Experiencia</a></li>
                     <li><a class="navlink" id="estudos" href="#Estudos" onclick="mostrarPag(3)">Cursos</a></li>
                 </ul>
             </navbar>
             <div class="footer-sidebar">
                 <div class="links">
-                    <a>Linkedin</a>
-                    <a>Github</a>
-                    <a>Email</a>
+                    <a href="https://www.linkedin.com/in/ruhankaio/" target="_blank"><img style="width: 30px; height: 30px;" src="./img/linkedin.png"></a>
+                    <a href="https://github.com/rkschitz" target="_blank"><img style="width: 30px; height: 30px;" src="./img//github.png"></a>
                 </div>
             </div>
         </div>
         <button class="botao-sidebar" onclick="toggleSidebar()">☰</button>
         <div class="sidebar-mobile">
-            <navbar class="navbar-mobile">
+            <navbar class="navbar">
                 <ul>
                     <li><a class="navlink" id="sobre" href="#Sobre" onclick="mostrarPag(1)">Sobre</a></li>
                     <li><a class="navlink" id="experiencias" href="#Experiencias"
@@ -52,21 +50,26 @@
                 <div id='beginning'>
                     <span class='title-conteudo'>SEJA BEM-VINDO!</span>
                     <span>Esse sou eu ... :)</span>
-                    <img src="./eu.jpg" alt="Essa imagem apresenta o desenvolvedor dessa pagina"
+                    <img src="./img/eu.jpg" alt="Essa imagem apresenta o desenvolvedor dessa pagina"
                         title="Ruhan Kaio Schitz" style="width: 300px; height: 400px;"></img>
-                    <span>Éssa é minha aplicação  pessoal!</span>
+                    <span>Éssa é minha aplicação pessoal!</span>
                 </div>
                 <div id='aboutme'>
                     <h1>About me</h1>
-                    <p>Olá, meu nome é Ruhan Kaio Schitz, tenho 18 anos e curso Análise e Desenvolvimento de Sistema no
-                         Senac.
+                    <div style="padding-top: 20px;">
+                    <p>Olá, meu nome é Ruhan Kaio Schitz, tenho 18 anos e curso Análise e Desenvolvimento de Sistema no Senac.</p>
+                    <p>Sou um entuasista da tecnologia e gosto de eletronica</p>
+                    <p>Quando eu tinha 15 anos comecei a estudar programação e até hoje não parei.</p>
+                    <p>Nas horas vagas também sou gamer e fenatico por som automotivo</p>
+                    <p>Sempre que possivel estou estudando e buscando conhecimento na área.</p>
+                </div>
                 </div>
                 <div id='experiences'>
                     <h1>Experiencias</h1>
                     <div class="card">
                         <div class="conteudo-card">
-                            <div class="img-card"><img src="./assustadus.jpeg" /></div>
-                             <div class="texto-card">
+                            <div class="img-card"><img src="./img/assustadus.jpeg" /></div>
+                            <div class="texto-card">
                                 <div class="title-texto-card">
                                     <span>
                                         Assustadus Tech - Desenvolvedor de Sistemas
@@ -84,7 +87,7 @@
                                     <span class="linguagem">
                                         JS
                                     </span>
-                                    <span  class="linguagem">
+                                    <span class="linguagem">
                                         React.js
                                     </span>
                                     <span class="linguagem">
@@ -95,14 +98,74 @@
                                     </span>
                                     <span class="linguagem">
                                         SASS
-                                         </span>
+                                    </span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="studies">
-                    Cursos
+                    <h1>Cursos</h1>
+                    <div class="card">
+                        <div class="conteudo-card" style="align-items: center;">
+                            <div class="img-card"><img src="./img/senac.png" /></div>
+                            <div class="texto-card">
+                                <div class="title-texto-card">
+                                    <span>
+                                        Ensino Médio Intregado ao Técnico em Informática para internet
+                                    </span>
+                                </div>
+                                <div class="conteudo-texto-card">
+                                    <span>
+                                        Inicio: Feveiro de 2020
+                                    </span><br>
+                                    <span>
+                                        Fim: Dezembro de 2022
+                                    </span><br>
+                                    <span>
+                                        Localização: Joinville - SC
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="conteudo-card" style="align-items: center;">
+                            <div class="img-card"><img src="./img/udemy.png" /></div>
+                            <div class="texto-card">
+                                <div class="title-texto-card">
+                                    <span>
+                                        Udemy
+                                    </span>
+                                </div>
+                                <div class="conteudo-texto-card">
+                                    <span>
+                                        Curso Web: JavaScript (andamento)
+                                    </span><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="conteudo-card" style="align-items: center;">
+                            <div class="img-card"><img src="./img/senac.png" /></div>
+                            <div class="texto-card">
+                                <div class="title-texto-card">
+                                    <span>
+                                        Técnologo em Análise e Desenvolvimento de Sistemas
+                                    </span>
+                                </div>
+                                <div class="conteudo-texto-card">
+                                    <span>
+                                        Inicio: Feveiro de 2023
+                                    </span><br>
+                                    <span>
+                                        Localização: Joinville - SC
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
