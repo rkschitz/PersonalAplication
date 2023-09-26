@@ -133,7 +133,8 @@ ul a {
 #beginning,
 #aboutme,
 #experiences,
-#studies {
+#studies,
+#sports {
     display: none;
 }
 
